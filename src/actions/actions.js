@@ -1,11 +1,10 @@
 import { ADD, DELETE, COMPLETE, EDIT,SAVE, CLEAR } from "./types";
-const addToDo = (newTodo) => {
+export const addToDo = (newTodo) => {
   return {
     type: ADD,
     payload: newTodo,
   };
 };
-export default addToDo;
 export const deleteToDo = (id) => {
   return {
     type: DELETE,
